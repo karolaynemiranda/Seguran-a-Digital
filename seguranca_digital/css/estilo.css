@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;500&family=Dancing+Script:wght@400;500;600;700&family=Slabo+27px&family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;500&family=Dancing+Script:wght@400;500;600;700&family=Slabo+27px&display=swap');
+
+
+
+
+:root{
+    --corPrinpal: rgb(17, 15, 15);
+    --corSecundaria: aquamarine;
+    --letrasCursivas:'Dancing Script', cursive;
+}
+/*8Resentando o css*/
+*{
+    margin: 0; /*Margem*/
+    padding: 0; /* Espaço interno*/
+}
+
+
+
+
+body{
+    color: rgb(187, 179, 179);
+    background-color:var(--corPrinpal); /* muda a cor do funfo*/
+}
+
+
+header, main, footer{
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 50px;
+
+
+}
+
+
+
+
+.tecnologia{
+    color: rgb(134, 133, 65);
+}
+
+
+footer{
+    color: white;
+    text-shadow: 1px 1px 1px blueviolet;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+.titulo-principal{
+    color: white; /*cor do texto*/
+    font-weight: bold; /*Dfine negrito ou não do texto*/
+    font-size: 3em; /* Tamanho da fonte. 3x mais que op padrão*/
+    text-transform: uppercase; /* Transforma o texto em maiúscuo*/
+    font-family: 'Dancing script', cursive;/* Define a fonte*/
+    text-shadow: 4px 3px 4px aquamarine;
+    line-height: 4px; /*Espaço entre linhas*/
+    text-align: center;/* Centraliza o texto*/
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+
+h2{
+    font-size: 20px; /* Centraliza o texto*/
+    text-align: center; /* Centraliza o texto*/
+    margin: 15px auto;
+    color: rgb(155, 44, 50);
+}
+
+
+
+
+a{
+    text-decoration: none; /* Desativa ativa o sublinhado dos links*/
+    color:white;
+    text-shadow: 1px 1px 1px blue;
+    cursor: pointer;
+
+
+
+
+}
+
+
+
+
+.msg-erro{
+    visibility: hidden; /* Ocultaa o texto */
+}
+
+
+
+
+.menu{
+    list-style: none; /* Desariiva a imagem dos marcadores*/
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'DM Serif Display', serif;
+    text-shadow: 4px 3px 4px mistyrose;
+    display: flex; /*Coloca os elementos filhos inline (em linha)*/
+    justify-content: space-around; /*Alinhamento dos elementos filhos*/
+ }
+.formulario{
+    list-style: none;
+}
+
+
+
+
+h3{
+    margin: 30px;
+    font-family: 'DM Serif Display' serif;
+    color: rgb(155, 44, 50);
+}
+.formularioCentralizado{
+    margin: 0 auto;
+    width: 300px;
+}
+
+
+h4{
+    color: rgb(97, 153, 45);
+}
+
+
+.album-fotos{
+    width: 300px;
+    height: auto;
+    margin: 20px auto; /* */
+    border-width: 1px;/* Largura da borda*/
+    border-style: double; /* Estilo da linha da borda*/
+    border-color: rgb(135, 119, 172); /* Cor da borda*/
+    border-radius: 20px; /* Arredonda a borda*/
+    justify-content: center;
+   
+}
+
+
+.fotos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.img-container {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* formatação do formulário*/
+input[type=text],
+input[type=estado],
+input[type=email],
+input[type=telefone],
+input[type=cidade],
+textarea,
+select{
+    background-color: blanchedalmond;
+    width: 250px;/*largura*/
+    margin-bottom: 10px; /*espaço interno ao redor do elemento*/
+    padding: 10px; /*Espaço interno ao redor do elemento*/
+    color: rgb(5, 5, 12); /*Cor do texto*/
+    border-radius: 5px; /*Arredondamento das caixas*/
+    border: 0px; /*Desativa a borda padrão*/
+    transition: backgroud-color 1s ease;
+
+
+
+
+}
+input[type=text]:focus,
+input[type=telefone]:focus,
+input[type=cidade]:focus,
+input[type=email]:focus{
+    background-color: rgb(155, 155, 228);
+    color: white;
+}
+
+
+
+
+label{
+    color: rgb(0, 108, 197);
+    text-align: left; /*Alinhamento a esquerda*/
+    margin: 0px; /*Margem zerada para ficar colada aos inputs*/
+    display: block; /*Bloqueia a linha para ser o único elemento*/
+}
+input[type=file]{
+    background-color: wheat;
+}
+input[type=file]{
+    display: none; /*tonar oculto*/
+
+
+
+
+}
+
+
+.beneficios {
+    padding: 2em 0;
+    background: #04212c;
+}
+
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+
+
+
+
+.itens:before {
+    content: "★";
+
+
+}
+.itens:first-child {
+    font-weight: bold;
+}
+
+
+strong{
+    color: brown;
+}
+.foto{
+    padding: 10px 10px; /*Espaço entre conteúdo interno*/
+    width: 200px; /*Largura*/
+    background-color: rgb(226, 217, 202); /*Cor de fundo*/
+    color:rgb(109, 93, 93); /*Cor de texto*/
+    /*text-transform: ; /*Texto em maiúscula*/
+    text-align: center; /*Alinhamento do texto centralizado*/
+    display: block; /*Display de uma única Linha*/
+    margin-top: 10px; /*MArgem externa superior*/
+    cursor: pointer; /*Ponteiro em formato de mãozinha*/
+   
+}
+
+
+
+
+.video{
+    width: 5vw; /* Largura */
+    height: auto; /* Altura: automática */
+    margin: 15px auto;
+    border-width: 1px; /* Largura da borda */
+    border-style: double; /* Estilo da linha da borda */
+    border-color: blue; /* Cor da borda */
+    border-radius: 10px; /* Arredonda a borda */
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+button{
+    background-color: rgb(132, 178, 221); /*Cor de fundo*/
+    color: rgb(9, 3, 15);
+    font-size: 1.2em;/*Tamanho da fonte> 16px * 1.2 = 19,2*/
+    padding: 3px; /* Espaço ao redor do conteúdo interno*/
+    margin: 20px; /* Espaço ao redor do elemento*/
+    border-radius: 15px; /*Arredonda as bordas*/
+
+
+
+
+    transition: backgroud-color 1s ease; /*Transição cor de fundo*/
+   
+}
+button:hover{
+    background-color: slategrey;
+    transform: scale(1.1); /*Aumenta o tamanho ao arrastar o mouse em cima do icone*/
+    /*transform: rotate(10deg);*/
+   
+}
+
+
